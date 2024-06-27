@@ -3,31 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--link to external styles file-->
+    <title>Sweet Zen Spa and Coffee</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <!--Block-line element above, allowing ability to navigate between pages-->
+            <div class="toppage"> <!--class selector for external CSS-->
+                <img src="images/Sweetzenlogo.png" width="300" alt="Sweet Zen Logo"></br>
+                    <a href="index.html">Home</a>
+                    <a href="Spaservices.html">Spa Services</a>
+                    <a href="Coffee.html">Coffee</a>
+                    <a href="Contact.html">Contact</a>
+            </div>
+        </nav>
+    </header><!--class selector for external CSS-->
     
-    <img src="images/Sweetzenlogo.png" width="600" alt="Sweet Zen Logo">
-
-    <div>
-        <a href="index.html">About Us</a>
-        <a href="Spaservices.html">Spa Services</a>
-        <a href="Coffee.html">Coffee</a>
-        <a href="Contact.html">Contact</a>
-    </div>
-<!--Block-line element above, allowing ability to navigate between pages-->
-
-<section>
-    <h2>About Us</h2>
-<p>
-    Welcome to Sweet Zen Spa and Coffee, a haven of luxury in Delavan, WI. Our spa offers an escape for the senses with rejuvenating services including detoxifying float rooms, invigorating infrared saunas, blissful massages and the simple pleasure of expertly crafted coffee. Immerse yourself in the art of well-being, where every visit promises benefits for the body, mind, and spirit. From improved sleep quality to stress reduction and radiant skin renewal, discover the path to bliss in our oasis. <br>
-
- <h3>Call us at (262) 310-7271 or click below to book your rejuvenating experience today!</h3>
-</p>
-</section>
-    <form action="https://booking.mangomint.com/943990" method="get">
-        <button type="submit">BOOKING</button>
-      </form>
+<main>
+        <section>
+            <h2>About Us</h2>
+            <p>Welcome to Sweet Zen Spa and Coffee, a haven of luxury in Delavan, WI. Our spa offers an escape for the senses with rejuvenating services including detoxifying float rooms, invigorating infrared saunas, blissful massages and the simple pleasure of expertly crafted coffee. Immerse yourself in the art of well-being, where every visit promises benefits for the body, mind, and spirit. From improved sleep quality to stress reduction and radiant skin renewal, discover the path to bliss in our oasis.</p><br>
+        </section>
+    
+        <section>
+            <h3>Call us at (262) 310-7271 or click below to book your rejuvenating experience today!</h3>
+                    
+            <form action="https://booking.mangomint.com/943990" method="get">
+                    <button type="submit" id="myButton">BOOKING</button> <!--id selector for button-->
+            </form>
+        </section></br>
 <!--Form button, navigates to established booking page URL-->
+       
+    <div class="hours"> <!--class selector--> 
+        <section>
+            <table>
+            <tr>
+                <th>Spa & Coffee Shop Hours</th>
+            </tr>
+            <tr>
+                <td>Monday-Friday: 8:00a-6:00p</td>
+            </tr>
+            <tr>
+                <td>Saturday: 8:00a-4:00p</td>
+            </tr>
+            <tr>
+                <td>Sunday: CLOSED</td>
+            </tr>
+        </table>
+        <!--table with spa hours-->
+        </section>
+    </div>
+</main>
+
 </body>
 </html>

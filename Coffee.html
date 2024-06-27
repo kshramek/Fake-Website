@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">   <!--link to external styles file-->
+    <title>Sweet Zen Spa and Coffee</title>
 </head>
 <body>
     
-    <img src="images/Sweetzenlogo.png" width="600" alt="Sweet Zen Logo">
+    <header>
+        <nav>
+            <!--Block-line element above, allowing ability to navigate between pages-->
+            <div class="toppage"> <!--class selector for external CSS-->
+                <img src="images/Sweetzenlogo.png" width="300" alt="Sweet Zen Logo"></br>
+                    <a href="index.html">Home</a>
+                    <a href="Spaservices.html">Spa Services</a>
+                    <a href="Coffee.html">Coffee</a>
+                    <a href="Contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
 
-    <div>
-        <a href="index.html">About Us</a>
-        <a href="Spaservices.html">Spa Services</a>
-        <a href="Coffee.html">Coffee</a>
-        <a href="Contact.html">Contact</a>
-    </div>
 <!--Block-line element above, allowing ability to navigate between pages-->
 <header><h2>Sweet Zen Coffee</h2></header>
 
@@ -26,38 +32,41 @@
  <img src="images/Drinks2.jpg" width="300" alt="Summer Drink Menu">
 </section><br> <!--break-->
 
-<table border="1">
-<tr>
-    <th>DRINK</th>
-    <th>12oz</th>
-    <th>16oz</th>
-    <th>20oz</th>
-</tr>
-<tr>
-    <td>House Blend</td>
-    <td>$2.75</td>
-    <td>$3.00</td>
-    <td>$3.75</td>
-</tr>
-<tr>
-    <td>Cold Brew</td>
-    <td>$4.00</td>
-    <td>$4.50</td>
-    <td>$5.00</td>
-<tr>
-    <td>Nitro Brew</td>
-    <td>$4.25</td>
-    <td>$5.00</td>
-    <td>NA</td>
-<tr>
-    <td>Cafe Latte</td>
-    <td>$4.25</td>
-    <td>$4.50</td>
-    <td>$4.75</td>
-</tr>
-<!--table. 4x5-->
+<div class="grid">  <!--class selector for external CSS-->
+    <div class="item">
+        <section>
+            <p>
+            House Blend
+            $2.75-$3.75
+            </p>
+        </section> 
+    </div>
+    <div class="item">
+        <section>
+            <p>
+            Cold Brew
+            $4.00-$5.00
+            </p>
+        </section>
+    </div>
+    <div class="item">
+        <section>
+            <p>
+            Nitro Brew
+            $4.25-$5.00
+            </p>
+        </section>
+    </div>
+    <div class="item">
+        <section>
+            <p>
+            Cafe Latte
+            $4.25-$4.75
+            </p>
+        </section> 
+    </div>
+    
+</div>
 
-
-</table>
 </body>
 </html>
